@@ -260,6 +260,26 @@ with gr.Blocks(title="Job outreach agent") as demo:
             export_btn = gr.Button("Export CSV")
         csv_file = gr.File(label="CSV")
 
+    with gr.Tab("About"):
+        gr.Markdown(
+            """
+## About
+
+**Saar Agmon** — Industrial Engineering & Management student at Ben-Gurion University.
+Interested in data, AI, and agent workflows that have a paper trail (match → review → send → track).
+
+This app is a **portfolio demo**, not a mass-mailer:
+
+- Research uses only what you paste (JD + notes)
+- A matcher can **refuse** to write if CV fit is low
+- A second LLM reviews the draft like a recruiter
+- Send defaults to **your** inbox
+- Recruiter emails are typed in by you — nothing is scraped
+
+Code: [github.com/saaragmon/Job-search-outreach-agent](https://github.com/saaragmon/Job-search-outreach-agent)
+            """
+        )
+
     gen.click(
         on_generate,
         inputs=[

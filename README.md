@@ -2,6 +2,15 @@
 
 A small **multi-agent** app for internship / early-career outreach.
 
+## About
+
+Built by **[Saar Agmon](https://github.com/saaragmon)** — Industrial Engineering & Management student at Ben-Gurion University, focused on data, AI, and using agents for real workflows (not just chat).
+
+This repo is a portfolio project: take a job posting, check it honestly against a CV, draft outreach, have a second model critique it like a recruiter, then track status. It started from OpenAI Agents SDK patterns (tools, parallel runs, a reviewer step) and is meant to be easy to clone and demo locally.
+
+- GitHub: [saaragmon/Job-search-outreach-agent](https://github.com/saaragmon/Job-search-outreach-agent)
+- Default safety: email **yourself** unless you explicitly allow another address
+
 You paste a job posting. The app:
 
 1. Writes a company brief from **your notes + the JD** (it does not invent facts)
